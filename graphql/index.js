@@ -7,8 +7,8 @@ const typeDefs = require("./schema.js");
 const resolvers = require("./resolvers.js");
 
 const dataSources = () => ({
-  sessionApi: new SessionAPI(),
-  speakerApi: new SpeakerAPI()
+  sessionAPI: new SessionAPI(),
+  speakerAPI: new SpeakerAPI()
 });
 const server = new ApolloServer({
   typeDefs,

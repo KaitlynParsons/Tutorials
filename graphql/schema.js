@@ -8,36 +8,58 @@ module.exports = gql`
       description: String
       startsAt: String
       endsAt: String
-      room: String
+      room: Room
       day: String
       format: String
       track: String
       level: String
     ): [Session]
-    sessionById(id: ID): Session,
-    speakers: [Speaker],
+    sessionById(id: ID): Session
+    speakers: [Speaker]
     speakerById(id: ID): Speaker
   }
+  input SessionInput {
+    title: String!
+    description: String
+    startsAt: String
+    endsAt: String
+    room: Room
+    day: String
+    format: String
+    track: String
+    level: String
+    favourite: Boolean
+  }
   type Session {
-    id: ID!,
-    title: String!,
-    description: String,
-    startsAt: String,
-    endsAt: String,
-    room: String,
-    day: String,
-    format: String,
+    id: ID!
+    title: String!
+    description: String
+    startsAt: String
+    endsAt: String
+    room: Room
+    day: String
+    format: String
     track: String
       @deprecated(
         reason: "Too many sessions do not fit into a single track, we will be migrating to a tags based system in the future..."
-      ),
-    level: String,
+      )
+    level: String
     speakers: [Speaker]
+    favourite: Boolean
   }
   type Speaker {
-    id: ID!,
-    bio: String,
-    name: String,
+    id: ID!
+    bio: String
+    name: String
     sessions: [Session]
+  }
+  type Mutation {
+    toggleFavouriteSession(id: ID): Session
+    addNewSession(session: SessionInput): Session
+  }
+  enum Room {
+    EUROPA
+    SOL
+    SATURN
   }
 `;
