@@ -6,8 +6,16 @@ module.exports = {
   Session,
   Mutation,
   Room: {
-    EUROPA: 'Europa',
-    SOL: 'Sol',
-    SATURN: 'Saturn'
-  }
+    EUROPA: "Europa",
+    SOL: "Sol",
+    SATURN: "Saturn",
+  },
+  SessionOrError: {
+    __resolveType(obj) {
+      if (obj.code) {
+        return "Error";
+      }
+      return "Session";
+    },
+  },
 };

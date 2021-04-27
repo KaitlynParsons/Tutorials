@@ -14,7 +14,7 @@ module.exports = gql`
       track: String
       level: String
     ): [Session]
-    sessionById(id: ID): Session
+    sessionById(id: ID): SessionOrError
     speakers: [Speaker]
     speakerById(id: ID): Speaker
   }
@@ -62,4 +62,10 @@ module.exports = gql`
     SOL
     SATURN
   }
+  type Error {
+    code: String,
+    message: String,
+    token: String
+  }
+  union SessionOrError = Session | Error
 `;
