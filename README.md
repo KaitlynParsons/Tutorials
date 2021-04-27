@@ -1,2 +1,2 @@
-# blockchain-demo
-Purpose of this is to learn the basics of blockchain.
+# Tutorials
+Repository to house any tutorials I follow to look back on.
