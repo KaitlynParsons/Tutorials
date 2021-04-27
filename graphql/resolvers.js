@@ -1,10 +1,6 @@
+const Query = require("./resolvers/query");
+const Session = require("./resolvers/sessions");
 module.exports = {
-  Query: {
-    sessions: (parent, args, { dataSources }, info) => {
-      return dataSources.sessionApi.getSessions(args);
-    },
-    sessionsById: (parent, { id }, { dataSources }, info) => {
-      return dataSources.sessionApi.getSessionsById(id);
-    },
-  },
+  Query,
+  Session
 };
