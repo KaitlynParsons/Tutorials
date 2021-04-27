@@ -1,23 +1,20 @@
-const { ApolloServer, gql } = require("apollo-server");
+const { ApolloServer } = require("apollo-server");
+const SessionAPI = require("./datasources/sessions");
 
-const typeDefs = gql`
-type Query {
-    sessions: [Session]
-}
-type Session {
-    id: ID!,
-    title: String!,
-    description: String,
-    startsAt: String,
-    endsAt: String,
-    room: String,
-    day: String,
-    format: String,
-    track: String,
-    level: String
-}`
+const typeDefs = require("./schema.js");
 
-const server = new ApolloServer({typeDefs});
+const resolvers = require("./resolvers.js");
+
+const dataSources = () => ({
+  sessionApi: new SessionAPI()
+});
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  dataSources,
+  // introspection: true,
+  // playground: true,
+});
 
 server.listen({ port: process.env.port || 4000 }).then((url) => {
   console.log(`GraphQL running at ${url.port}`);
