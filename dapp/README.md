@@ -7,9 +7,9 @@
 * truffle (npm install truffle -g)
 
 ## Setup
-- from the root directory: truffle compile
+- From the root directory: truffle compile
 - Use [Ganache](https://www.trufflesuite.com/ganache) to launch a personal blockchain for Ethereum development
-- from the root directory: truffle migrate
+- From the root directory: truffle migrate
 - Install and setup the MetaMask add-on in chrome
   - Connect MetaMask to the blockchain create by Ganache.
     - Main Network > Custom RPC
@@ -18,7 +18,7 @@
   - Click Save
 
 ### To run tests
-- from the root directory: truffle test
+- From the root directory: truffle test
 
 ### To run the dapp
 - From the root directory: npm run dev
