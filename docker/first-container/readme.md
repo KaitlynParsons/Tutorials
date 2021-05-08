@@ -13,7 +13,7 @@ Express app with handlebars view engine.
 - docker login
 - docker image push [dockerid]/[reponame]:[imagename]
 - docker container run -d --name [name] -p 8000:8080 \
- - [dockerid]/[reponame]:[imagename]
+  - [dockerid]/[reponame]:[imagename]
 
 ## Starting the container
 - docker container start [name]
