@@ -2,8 +2,8 @@
 Basic graph tutorial utilising the graph blockchain technology.
 
 ## Resources
-[The Graph](https://thegraph.com/)
-[dev.to Tutorial](https://dev.to/dabit3/building-graphql-apis-on-ethereum-4poa)
+- [The Graph](https://thegraph.com/)
+- [dev.to Tutorial](https://dev.to/dabit3/building-graphql-apis-on-ethereum-4poa)
 
 ## Requirements
 - npm
