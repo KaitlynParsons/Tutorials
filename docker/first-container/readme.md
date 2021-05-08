@@ -24,6 +24,6 @@ Express app with handlebars view engine.
 ## Removing the container
 - docker container rm [name]
 
-## Removing the image
+## Removing the docker image
 - docker image rm [dockerid]/[reponame]:[imagename]
 
