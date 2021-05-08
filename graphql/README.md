@@ -11,7 +11,7 @@ Tutorial from PluralSight to build a GraphQL API with the Apollo Server library.
 - From the root directory: npm start
 
 ## Sample Query
-`
+```graphql
 query {
   sessionById(id:"84473") {
     ...on Session {
@@ -40,4 +40,4 @@ query {
     level
   }
 }
-`
+```
