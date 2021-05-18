@@ -3,7 +3,7 @@ const {RESTDataSource} = require('apollo-datasource-rest');
 class SpeakerAPI extends RESTDataSource {
     constructor(){
         super();
-        this.baseURL = 'http://localhost:3000/speakers';
+        this.baseURL = 'http://speakers:3000/speakers';
     }
 
     async getSpeakers(args) {

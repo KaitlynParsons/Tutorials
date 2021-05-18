@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  speakers:
+    build: 
+        context: ./data/speakers
+    ports:
+      - 3000:3000
+    command: npm run start
+  graphql:
+    build: 
+        context: ./
+    depends_on: 
+        - speakers
+    ports:
+      - 4000:4000
+    command: npm run start

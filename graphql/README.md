@@ -4,17 +4,10 @@ Tutorial from PluralSight to build a GraphQL API with the Apollo Server library.
 ## Requirements
 - Node.js (node --version)
 - npm (npm --version)
+- docker desktop
 
 ## Setup
-- From the data/speakers directory: npm install && npm start
-- npm install
-
-- ## Run Locally
-  - npm start
-
-- ## Run in Docker
-  - `docker build . -t <your name>/graphql`
-  - `docker run -p 4000:4000 -d <you name>/graphql`
+- docker compose up
 
 - url will be located at: http://localhost:4000
 
