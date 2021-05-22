@@ -4,10 +4,10 @@ Tutorial from PluralSight to build a GraphQL API with the Apollo Server library.
 ## Requirements
 - Node.js (node --version)
 - npm (npm --version)
-- docker desktop
+- docker desktop (docker & docker-compose)
 
 ## Setup
-- docker compose up
+- docker-compose up
 
 - url will be located at: http://localhost:4000
 
