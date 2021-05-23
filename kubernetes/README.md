@@ -5,7 +5,9 @@
     - [TODO] Kubernetes for Developers: Integrating Volumes and Using Multi-container Pods 
 
 ## K8s Architecture
-- ### Masters
+<details>
+<summary>Masters</summary>
+
   - Also known as head nodes or the control plane
   - Multi-master control plane
   - H/A Design/Config (3 is the magic number in most cases).
@@ -37,7 +39,10 @@
       - constraints
       - taints
       - resources
-- ### Nodes - alternative virtual kubelet
+ </details>
+
+<details><summary>Nodes - alternative virtual kubelet</summary>
+
   - kubelet
     - main kubernetes agent
     - registers node with cluster
@@ -53,13 +58,19 @@
     - networking component
     - pod ip addresses
     - basic load-balancing
-- ### Pods
+</details>
+
+<details><summary>Pods</summary>
+
   - Essentially a container wrapper
   - Scale pods, not containers!
   - Pod scheduled to single node
   - Pods are mortal
   - Annotations, labels, policies, resources, co-scheduling containers
-- ### Deployments
+</details>
+
+<details><summary>Deployments</summary>
+
   - Deployment Controller/Reconciliation loop
     - Watches api server for new deployments
     - implements them
@@ -68,23 +79,30 @@
   - Replica Set Controller
   - Replica is a pod
   - Makes sure desired state matches observed state
+</details>
 
-- ### Declarative model
+<details><summary>Declarative model</summary>
+
   - Describe what you want (desired state) in a manifest file
+</details>
 
-- ### Stable Networking with K8s Service
+<details><summary>Stable Networking with K8s Service</summary>
+
   - Only sends traffic to healthy pods
   - Can do session affinity
   - Can send traffic to endpoints outside the cluster
   - Can do TCP and UDP
+</details>
 
-- ### K8s Api & Api Service
+<details><summary>K8s Api & Api Service</summary>
+
   - Catalog of features
     - core: pod, cm, ep, svc, vol, ns
     - workloads/apps: deploy, ds, rs, sts
     - storage: sc, pv, pvc
     - networking: ing, netpol
+</details>
 
-- ## Visual Overview
+## Visual Overview
  ![1](https://github.com/KaitlynParsons/tutorials/blob/master/kubernetes/k8s.PNG)
  ![2](https://github.com/KaitlynParsons/tutorials/blob/master/kubernetes/k8s2.PNG)
