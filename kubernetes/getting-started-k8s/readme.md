@@ -20,3 +20,16 @@ A publically available pre-created container image is available for download [he
 - Docker
 - kubectl
 - kubernetes
+
+## Setup
+- cd pods && kubectl apply -f pod.yml
+- cd services && kubectl apply -f svc-nodeport.yml
+
+- URL will be at: http://localhost:31111/
+
+## Useful Commands
+- Deploy the yml file(pod, service, deployment): kubectl apply -f {name}.yml
+- kubectl get pods --watch
+- kubectl get pods -o wide
+- kubectl describe pods hello-world
+- delete the yml file(pod, service, deployment): kubectl delete -f {name}.yml
