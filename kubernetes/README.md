@@ -86,5 +86,5 @@
   - networking: ing, netpol
 
 - ## Visual Overview
- - ![](k8s.png)
- - ![](k8s2.png)
+ - ![1](k8s.png)
+ - ![2](k8s2.png)
