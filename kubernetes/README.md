@@ -86,5 +86,5 @@
   - networking: ing, netpol
 
 - ## Visual Overview
- - ![1](./k8s.png?raw=true)
- - ![2](./k8s2.png?raw=true)
+ - ![1](kubernetes\k8s.PNG)
+ - ![2](kubernetes\k8s2.PNG)
