@@ -106,3 +106,4 @@
 ## Visual Overview
  ![1](https://github.com/KaitlynParsons/tutorials/blob/master/kubernetes/k8s.PNG)
  ![2](https://github.com/KaitlynParsons/tutorials/blob/master/kubernetes/k8s2.PNG)
+ ![3](https://github.com/KaitlynParsons/tutorials/blob/master/kubernetes/k8s3.PNG)

@@ -4,7 +4,6 @@ metadata:
   name: ps-nodeport
 spec:
   type: NodePort
-  externalTrafficPolicy: Cluster
   ports:
   - port: 80
     targetPort: 8080
