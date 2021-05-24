@@ -22,7 +22,6 @@ A publically available pre-created container image is available for download [he
 - kubernetes
 
 ## Setup
-- cd pods && kubectl apply -f pod.yml
 - cd services && kubectl apply -f svc-nodeport.yml
 - cd deployments && kubectl apply -f deploy-complete.yml
 
@@ -35,3 +34,4 @@ A publically available pre-created container image is available for download [he
 - kubectl describe {pods || services || deployments} hello-world
 - delete the yml file(pod, service, deployment): kubectl delete -f {name}.yml
 - kubectl get rs
+- rollback: kubectl rollout undo deploy {deployment name} --to-revision={revision number}
