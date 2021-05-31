@@ -2,10 +2,13 @@
 Repository to house any tutorials I follow to look back on.
 
 ## Table of Contents
-- [Graphql](https://github.com/KaitlynParsons/tutorials/tree/master/graphql)
-- [Docker](https://github.com/KaitlynParsons/tutorials/tree/master/docker)
-- [Kubernetes](https://github.com/KaitlynParsons/tutorials/tree/master/kubernetes)
-- BlockChain Technology:
-   - [The Graph](https://github.com/KaitlynParsons/tutorials/tree/master/the-graph/Zoranftsubgraph)
-   - [Dapp](https://github.com/KaitlynParsons/tutorials/tree/master/dapp)
-   - [Blockchain Python](https://github.com/KaitlynParsons/tutorials/tree/master/blockchain)
+- [Graphql](./graphql)
+- Docker
+   - [First Container](./docker/first-container)
+   - [Multi Container](./docker/multi-container)
+   - [Swarm Stack](./docker/swarm-stack)
+- [Kubernetes](./kubernetes)
+- Blockchain Technology
+   - [The Graph](./the-graph/Zoranftsubgraph)
+   - [Dapp](./dapp)
+   - [Blockchain Python](./blockchain)
