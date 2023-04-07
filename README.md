@@ -14,4 +14,4 @@ Repository to house any tutorials I follow to look back on.
    - [Blockchain Python](./blockchain)
 - [Rust](./rust_sandbox)
 - [DBT(Data Build Tool)](./dbt-learn)
-<!-- - [AWS CDK](./aws-cdk) -->
+- [AWS CDK](./cdk-workshop)
