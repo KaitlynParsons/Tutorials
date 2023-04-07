@@ -12,3 +12,6 @@ Repository to house any tutorials I follow to look back on.
    - [The Graph](./the-graph/Zoranftsubgraph)
    - [Dapp](./dapp)
    - [Blockchain Python](./blockchain)
+- [Rust](./rust_sandbox)
+- [DBT(Data Build Tool)](./dbt-learn)
+<!-- - [AWS CDK](./aws-cdk) -->
